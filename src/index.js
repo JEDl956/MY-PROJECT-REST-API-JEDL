@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 
-import projects from './routes/projects-temp.js'
+import projects from './routes/projects.js'
 
 import { isApiError } from './utils/errors.js'
 
