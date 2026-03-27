@@ -3,15 +3,15 @@ const seededAt = new Date().toISOString()
 let projects = [
   {
     id: 1,
-    name: 'Portfolio Website Refresh',
-    description: 'Update the visuals and project case studies.',
+    name: 'PC Build Planner App',
+    description: 'Develop a web app to plan custom PC builds.',
     created_at: seededAt,
     updated_at: seededAt,
   },
   {
     id: 2,
-    name: 'Design Systems Workshop',
-    description: 'Prepare teaching material for the class workshop.',
+    name: 'Network Setup Automation',
+    description: 'Create scripts to automate device configuration.',
     created_at: seededAt,
     updated_at: seededAt,
   },
@@ -21,8 +21,8 @@ let tasks = [
   {
     id: 1,
     project_id: 1,
-    title: 'Draft homepage wireframes',
-    description: 'Create desktop and mobile layout drafts.',
+    title: 'Design dashboard layout',
+    description: 'Create UI layout for selecting PC components.',
     status: 'in_progress',
     created_at: seededAt,
     updated_at: seededAt,
@@ -30,8 +30,8 @@ let tasks = [
   {
     id: 2,
     project_id: 1,
-    title: 'Collect new screenshots',
-    description: 'Replace old portfolio images.',
+    title: 'Add component pricing logic',
+    description: 'Calculate total cost based on selected parts.',
     status: 'todo',
     created_at: seededAt,
     updated_at: seededAt,
@@ -39,8 +39,8 @@ let tasks = [
   {
     id: 3,
     project_id: 2,
-    title: 'Finalize slide deck',
-    description: 'Include examples of good API design.',
+    title: 'Write PowerShell deployment script',
+    description: 'Automate software installation across devices.',
     status: 'done',
     created_at: seededAt,
     updated_at: seededAt,

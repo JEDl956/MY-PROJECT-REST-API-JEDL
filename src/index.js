@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import projects from './routes/projects.js'
+import projects from './routes/Projects.js'
 import tasks from './routes/tasks.js'
 import { isApiError } from './utils/errors.js'
 import { sendError } from './utils/response.js'
