@@ -1,6 +1,6 @@
 import { asc, eq } from 'drizzle-orm'
-import { nowIso } from './db'
-import { projects } from './schema'
+import { nowIso } from './db.js'
+import { projects } from './schema.js'
 
 function normalizeProjectInput(input) {
   return {
@@ -35,9 +35,7 @@ export async function updateProject(db, id, input) {
   const values = {
     updatedAt: nowIso(),
     ...('name' in input ? { name: input.name.trim() } : {}),
-    ...('description' in input
-      ? { description: input.description.trim() }
-      : {}),
+    ...('description' in input ? { description: input.description.trim() } : {}),
   }
 
   const [updated] = await db
