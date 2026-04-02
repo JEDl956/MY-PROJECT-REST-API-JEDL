@@ -14,6 +14,7 @@
 			"binding": "project_db",
 			"database_name": "project_db",
 			"database_id": "55968083-653c-4867-922f-24292ad01765",
+      "migrations_dir": "./src/data/migrations",
 			"remote": true
 		},
 	],
