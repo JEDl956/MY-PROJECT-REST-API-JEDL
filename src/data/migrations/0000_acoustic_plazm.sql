@@ -2,8 +2,8 @@ CREATE TABLE `projects` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`name` text NOT NULL,
 	`description` text DEFAULT '' NOT NULL,
-	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
-	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL
+	`created_at` text NOT NULL,
+	`updated_at` text NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE `tasks` (
@@ -12,8 +12,8 @@ CREATE TABLE `tasks` (
 	`title` text NOT NULL,
 	`description` text DEFAULT '' NOT NULL,
 	`status` text DEFAULT 'todo' NOT NULL,
-	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
-	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`created_at` text NOT NULL,
+	`updated_at` text NOT NULL,
 	FOREIGN KEY (`project_id`) REFERENCES `projects`(`id`) ON UPDATE no action ON DELETE cascade,
 	CONSTRAINT "tasks_status_check" CHECK("tasks"."status" IN ('todo', 'in_progress', 'done'))
 );
