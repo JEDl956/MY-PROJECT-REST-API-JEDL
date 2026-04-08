@@ -1,14 +1,21 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-projects-rest-api",
-  "main": "src/index.js",
-  "compatibility_date": "2026-03-08",
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "my_projects_db_3",
-      "database_id": "ce20aeaa-04dc-4505-8b84-82fda7514063",
-      "migrations_dir": "./src/data/migrations"
-    }
-  ]
+        "$schema": "node_modules/wrangler/config-schema.json",
+        "name": "my-projects-rest-api",
+        "main": "src/index.js",
+        "compatibility_date": "2026-03-08",
+        "d1_databases": [
+                {
+                        "binding": "DB",
+                        "database_name": "my_projects_db_3",
+                        "database_id": "ce20aeaa-04dc-4505-8b84-82fda7514063",
+                        "migrations_dir": "./src/data/migrations"
+                },
+                {
+                        "binding": "projects_db",
+                        "database_name": "projects_db",
+                        "database_id": "36ddf0f9-ef53-4bae-86d9-e6fe33d5415e",
+                        "migrations_dir": "./src/data/migrations",
+                        "remote": true
+                }
+        ]
 }
