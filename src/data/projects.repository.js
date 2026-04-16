@@ -6,6 +6,7 @@ function normalizeProjectInput(input) {
   return {
     name: input.name?.trim(),
     description: input.description?.trim() || '',
+    userId: input.userId,
   }
 }
 
